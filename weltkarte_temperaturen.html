@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Weltkarte: Aktuelle Temperaturen der Hauptstädte</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #0b1220; color: #e8e8e8; }
+  #header { position: absolute; top: 0; left: 0; right: 0; z-index: 1000; padding: 14px 20px; background: linear-gradient(to bottom, rgba(11,18,32,0.92), rgba(11,18,32,0)); pointer-events: none; }
+  #header h1 { margin: 0; font-size: 18px; font-weight: 600; letter-spacing: 0.2px; }
+  #header p { margin: 4px 0 0; font-size: 12.5px; color: #9aa6b8; }
+  #map { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #0b1220; }
+  .leaflet-container { background: #0b1220; }
+  #legend { position: absolute; bottom: 24px; left: 20px; z-index: 1000; background: rgba(18,24,38,0.92); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px 16px; box-shadow: 0 4px 18px rgba(0,0,0,0.4); min-width: 220px; }
+  #legend h2 { margin: 0 0 8px; font-size: 12px; font-weight: 600; color: #cfd3da; text-transform: uppercase; letter-spacing: 0.5px; }
+  #legend-bar { height: 10px; border-radius: 5px; background: linear-gradient(to right, #2b6fd1, #4fb0c6, #8bd17c, #f4d35e, #e8792f, #c62828); }
+  #legend-scale { display: flex; justify-content: space-between; font-size: 11px; color: #9aa6b8; margin-top: 4px; }
+  .leaflet-popup-content-wrapper { background: #161d2e; color: #e8e8e8; border-radius: 8px; }
+  .leaflet-popup-tip { background: #161d2e; }
+  .leaflet-popup-content b { color: #fff; }
+  #stats { position: absolute; bottom: 24px; right: 20px; z-index: 1000; background: rgba(18,24,38,0.92); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px 16px; font-size: 12.5px; color: #cfd3da; box-shadow: 0 4px 18px rgba(0,0,0,0.4); }
+  #stats div { margin: 2px 0; }
+  #stats b { color: #fff; }
+  .country-tooltip { background: rgba(18,24,38,0.95); color: #fff; border: 1px solid rgba(255,255,255,0.12); border-radius: 6px; padding: 6px 9px; font-size: 12.5px; box-shadow: 0 2px 10px rgba(0,0,0,0.4); }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Aktuelle Temperaturen der Hauptstädte</h1>
+  <p>197 Länder &middot; farbkodiert nach Temperatur der Hauptstadt &middot; Quelle: Open-Meteo</p>
+</div>
+
+<div id="map"></div>
+
+<div id="legend">
+  <h2>Temperatur (°C)</h2>
+  <div id="legend-bar"></div>
+  <div id="legend-scale">
+    <span id="legend-min"></span>
+    <span id="legend-mid"></span>
+    <span id="legend-max"></span>
+  </div>
+</div>
+
+<div id="stats"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="world_choropleth_data.js"></script>
+<script>
+const features = COUNTRY_GEOJSON.features;
+const temps = features.map(f => f.properties.temp);
+const minT = Math.min(...temps);
+const maxT = Math.max(...temps);
+
+// Diverging colour stops: cold -> mild -> hot
+const stops = [
+  { t: -30, c: [43, 111, 209] },
+  { t: -10, c: [79, 176, 198] },
+  { t: 10,  c: [139, 209, 124] },
+  { t: 22,  c: [244, 211, 94] },
+  { t: 32,  c: [232, 121, 47] },
+  { t: 45,  c: [198, 40, 40] },
+];
+
+function colorForTemp(t) {
+  if (t <= stops[0].t) return rgb(stops[0].c);
+  if (t >= stops[stops.length - 1].t) return rgb(stops[stops.length - 1].c);
+  for (let i = 0; i < stops.length - 1; i++) {
+    const a = stops[i], b = stops[i + 1];
+    if (t >= a.t && t <= b.t) {
+      const f = (t - a.t) / (b.t - a.t);
+      const c = a.c.map((v, idx) => Math.round(v + f * (b.c[idx] - v)));
+      return rgb(c);
+    }
+  }
+  return rgb(stops[stops.length - 1].c);
+}
+function rgb(c) { return `rgb(${c[0]},${c[1]},${c[2]})`; }
+
+const map = L.map('map', { worldCopyJump: true, minZoom: 2, zoomControl: true, attributionControl: false })
+  .setView([20, 10], 2);
+
+const geoLayer = L.geoJSON(COUNTRY_GEOJSON, {
+  style: feat => ({
+    fillColor: colorForTemp(feat.properties.temp),
+    fillOpacity: 0.85,
+    color: 'rgba(11,18,32,0.9)',
+    weight: 1,
+  }),
+  onEachFeature: (feat, layer) => {
+    const p = feat.properties;
+    layer.bindTooltip(
+      `<b>${p.land}</b><br>${p.stadt}: <b>${p.temp.toFixed(1)} °C</b>`,
+      { className: 'country-tooltip', sticky: true }
+    );
+    layer.on('mouseover', () => layer.setStyle({ weight: 2.5, color: '#ffffff' }));
+    layer.on('mouseout', () => layer.setStyle({ weight: 1, color: 'rgba(11,18,32,0.9)' }));
+  },
+}).addTo(map);
+
+// Small territories without polygon data (if any) rendered as markers
+(typeof MARKER_ONLY !== 'undefined' ? MARKER_ONLY : []).forEach(d => {
+  L.circleMarker([d.lat, d.lon], {
+    radius: 6,
+    fillColor: colorForTemp(d.temp),
+    color: '#ffffff',
+    weight: 1,
+    fillOpacity: 0.9,
+  }).bindTooltip(`<b>${d.land}</b><br>${d.stadt}: <b>${d.temp.toFixed(1)} °C</b>`,
+    { className: 'country-tooltip' }
+  ).addTo(map);
+});
+
+// Legend gradient matches colour stops, scaled to actual min/max
+const gradStops = stops.map(s => {
+  const pct = ((s.t - minT) / (maxT - minT)) * 100;
+  return `${rgb(s.c)} ${Math.max(0, Math.min(100, pct))}%`;
+}).join(', ');
+document.getElementById('legend-bar').style.background = `linear-gradient(to right, ${gradStops})`;
+document.getElementById('legend-min').textContent = minT.toFixed(0) + '°';
+document.getElementById('legend-mid').textContent = ((minT + maxT) / 2).toFixed(0) + '°';
+document.getElementById('legend-max').textContent = maxT.toFixed(0) + '°';
+
+const avg = temps.reduce((a, b) => a + b, 0) / temps.length;
+const coldest = features.reduce((a, b) => (a.properties.temp < b.properties.temp ? a : b)).properties;
+const hottest = features.reduce((a, b) => (a.properties.temp > b.properties.temp ? a : b)).properties;
+document.getElementById('stats').innerHTML = `
+  <div>Länder: <b>${features.length}</b></div>
+  <div>Durchschnitt: <b>${avg.toFixed(1)} °C</b></div>
+  <div>Kälteste: <b>${coldest.stadt}</b> (${coldest.temp.toFixed(1)} °C)</div>
+  <div>Wärmste: <b>${hottest.stadt}</b> (${hottest.temp.toFixed(1)} °C)</div>
+`;
+</script>
+</body>
+</html>

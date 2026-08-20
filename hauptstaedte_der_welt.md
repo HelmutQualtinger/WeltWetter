@@ -1,0 +1,211 @@
+# Hauptstädte aller Länder der Welt
+
+Liste der Staaten (193 UN-Mitgliedstaaten sowie Vatikanstadt, Palästina, Kosovo und Taiwan), ihrer Hauptstädte und der geografischen Koordinaten der Hauptstadt (Dezimalgrad, WGS84).
+
+Hinweis: Bei einigen Staaten weicht die offizielle/verfassungsmäßige Hauptstadt vom faktischen Regierungssitz ab (z. B. Bolivien, Südafrika) — dies ist jeweils vermerkt.
+
+| Land | Hauptstadt | Breitengrad | Längengrad |
+|---|---|---|---|
+| Afghanistan | Kabul | 34.5553 | 69.2075 |
+| Ägypten | Kairo | 30.0444 | 31.2357 |
+| Albanien | Tirana | 41.3275 | 19.8187 |
+| Algerien | Algier | 36.7538 | 3.0588 |
+| Andorra | Andorra la Vella | 42.5063 | 1.5218 |
+| Angola | Luanda | -8.8390 | 13.2894 |
+| Antigua und Barbuda | Saint John's | 17.1274 | -61.8468 |
+| Äquatorialguinea | Malabo | 3.7523 | 8.7742 |
+| Argentinien | Buenos Aires | -34.6037 | -58.3816 |
+| Armenien | Jerewan | 40.1792 | 44.4991 |
+| Aserbaidschan | Baku | 40.4093 | 49.8671 |
+| Äthiopien | Addis Abeba | 9.0320 | 38.7469 |
+| Australien | Canberra | -35.2809 | 149.1300 |
+| Bahamas | Nassau | 25.0343 | -77.3963 |
+| Bahrain | Manama | 26.2285 | 50.5860 |
+| Bangladesch | Dhaka | 23.8103 | 90.4125 |
+| Barbados | Bridgetown | 13.1132 | -59.5988 |
+| Belarus (Weißrussland) | Minsk | 53.9006 | 27.5590 |
+| Belgien | Brüssel | 50.8503 | 4.3517 |
+| Belize | Belmopan | 17.2510 | -88.7590 |
+| Benin | Porto-Novo | 6.4969 | 2.6289 |
+| Bhutan | Thimphu | 27.4712 | 89.6339 |
+| Bolivien | Sucre (Verfassungshauptstadt); La Paz (Regierungssitz) | -19.0333 | -65.2627 |
+| Bosnien und Herzegowina | Sarajevo | 43.8563 | 18.4131 |
+| Botswana | Gaborone | -24.6282 | 25.9231 |
+| Brasilien | Brasília | -15.7939 | -47.8828 |
+| Brunei | Bandar Seri Begawan | 4.9031 | 114.9398 |
+| Bulgarien | Sofia | 42.6977 | 23.3219 |
+| Burkina Faso | Ouagadougou | 12.3714 | -1.5197 |
+| Burundi | Gitega | -3.4264 | 29.9306 |
+| Chile | Santiago | -33.4489 | -70.6693 |
+| China | Peking | 39.9042 | 116.4074 |
+| Costa Rica | San José | 9.9281 | -84.0907 |
+| Côte d'Ivoire (Elfenbeinküste) | Yamoussoukro (offiziell); Abidjan (faktisch) | 6.8276 | -5.2893 |
+| Dänemark | Kopenhagen | 55.6761 | 12.5683 |
+| Deutschland | Berlin | 52.5200 | 13.4050 |
+| Dominica | Roseau | 15.3092 | -61.3794 |
+| Dominikanische Republik | Santo Domingo | 18.4861 | -69.9312 |
+| Dschibuti | Dschibuti-Stadt | 11.8251 | 42.5903 |
+| Ecuador | Quito | -0.1807 | -78.4678 |
+| El Salvador | San Salvador | 13.6929 | -89.2182 |
+| Eritrea | Asmara | 15.3229 | 38.9251 |
+| Estland | Tallinn | 59.4370 | 24.7536 |
+| Eswatini (Swasiland) | Mbabane | -26.3054 | 31.1367 |
+| Fidschi | Suva | -18.1416 | 178.4419 |
+| Finnland | Helsinki | 60.1699 | 24.9384 |
+| Frankreich | Paris | 48.8566 | 2.3522 |
+| Gabun | Libreville | 0.4162 | 9.4673 |
+| Gambia | Banjul | 13.4549 | -16.5790 |
+| Georgien | Tiflis | 41.7151 | 44.8271 |
+| Ghana | Accra | 5.6037 | -0.1870 |
+| Grenada | St. George's | 12.0561 | -61.7488 |
+| Griechenland | Athen | 37.9838 | 23.7275 |
+| Guatemala | Guatemala-Stadt | 14.6349 | -90.5069 |
+| Guinea | Conakry | 9.6412 | -13.5784 |
+| Guinea-Bissau | Bissau | 11.8636 | -15.5977 |
+| Guyana | Georgetown | 6.8013 | -58.1551 |
+| Haiti | Port-au-Prince | 18.5944 | -72.3074 |
+| Honduras | Tegucigalpa | 14.0723 | -87.1921 |
+| Indien | Neu-Delhi | 28.6139 | 77.2090 |
+| Indonesien | Jakarta | -6.2088 | 106.8456 |
+| Irak | Bagdad | 33.3152 | 44.3661 |
+| Iran | Teheran | 35.6892 | 51.3890 |
+| Irland | Dublin | 53.3498 | -6.2603 |
+| Island | Reykjavík | 64.1466 | -21.9426 |
+| Israel | Jerusalem (umstritten, international nicht allgemein anerkannt) | 31.7683 | 35.2137 |
+| Italien | Rom | 41.9028 | 12.4964 |
+| Jamaika | Kingston | 17.9714 | -76.7936 |
+| Japan | Tokio | 35.6762 | 139.6503 |
+| Jemen | Sanaa (verfassungsmäßig; faktischer Regierungssitz derzeit Aden) | 15.3694 | 44.1910 |
+| Jordanien | Amman | 31.9454 | 35.9284 |
+| Kambodscha | Phnom Penh | 11.5564 | 104.9282 |
+| Kamerun | Yaoundé | 3.8480 | 11.5021 |
+| Kanada | Ottawa | 45.4215 | -75.6972 |
+| Kap Verde | Praia | 14.9330 | -23.5133 |
+| Kasachstan | Astana | 51.1605 | 71.4704 |
+| Katar | Doha | 25.2854 | 51.5310 |
+| Kenia | Nairobi | -1.2921 | 36.8219 |
+| Kirgisistan | Bischkek | 42.8746 | 74.5698 |
+| Kiribati | Tarawa (South Tarawa) | 1.3291 | 172.9791 |
+| Kolumbien | Bogotá | 4.7110 | -74.0721 |
+| Komoren | Moroni | -11.7022 | 43.2551 |
+| Kongo, Demokratische Republik | Kinshasa | -4.4419 | 15.2663 |
+| Kongo, Republik | Brazzaville | -4.2634 | 15.2429 |
+| Korea, Nord (Nordkorea) | Pjöngjang | 39.0392 | 125.7625 |
+| Korea, Süd (Südkorea) | Seoul | 37.5665 | 126.9780 |
+| Kosovo | Pristina | 42.6629 | 21.1655 |
+| Kroatien | Zagreb | 45.8150 | 15.9819 |
+| Kuba | Havanna | 23.1136 | -82.3666 |
+| Kuwait | Kuwait-Stadt | 29.3759 | 47.9774 |
+| Laos | Vientiane | 17.9757 | 102.6331 |
+| Lesotho | Maseru | -29.3151 | 27.4869 |
+| Lettland | Riga | 56.9496 | 24.1052 |
+| Libanon | Beirut | 33.8938 | 35.5018 |
+| Liberia | Monrovia | 6.2907 | -10.7605 |
+| Libyen | Tripolis | 32.8872 | 13.1913 |
+| Liechtenstein | Vaduz | 47.1410 | 9.5209 |
+| Litauen | Vilnius | 54.6872 | 25.2797 |
+| Luxemburg | Luxemburg | 49.6116 | 6.1319 |
+| Madagaskar | Antananarivo | -18.8792 | 47.5079 |
+| Malawi | Lilongwe | -13.9626 | 33.7741 |
+| Malaysia | Kuala Lumpur (Regierungssitz teilweise Putrajaya) | 3.1390 | 101.6869 |
+| Malediven | Malé | 4.1755 | 73.5093 |
+| Mali | Bamako | 12.6392 | -8.0029 |
+| Malta | Valletta | 35.8989 | 14.5146 |
+| Marokko | Rabat | 34.0209 | -6.8417 |
+| Marshallinseln | Majuro | 7.1164 | 171.1858 |
+| Mauretanien | Nouakchott | 18.0735 | -15.9582 |
+| Mauritius | Port Louis | -20.1609 | 57.5012 |
+| Mexiko | Mexiko-Stadt | 19.4326 | -99.1332 |
+| Mikronesien | Palikir | 6.9248 | 158.1611 |
+| Moldau (Moldawien) | Chișinău | 47.0105 | 28.8638 |
+| Monaco | Monaco | 43.7384 | 7.4246 |
+| Mongolei | Ulaanbaatar | 47.8864 | 106.9057 |
+| Montenegro | Podgorica | 42.4304 | 19.2594 |
+| Mosambik | Maputo | -25.9692 | 32.5732 |
+| Myanmar | Naypyidaw | 19.7633 | 96.0785 |
+| Namibia | Windhoek | -22.5609 | 17.0658 |
+| Nauru | Yaren (faktisches Verwaltungszentrum, keine offizielle Hauptstadt) | -0.5477 | 166.9209 |
+| Nepal | Kathmandu | 27.7172 | 85.3240 |
+| Neuseeland | Wellington | -41.2865 | 174.7762 |
+| Nicaragua | Managua | 12.1150 | -86.2362 |
+| Niederlande | Amsterdam (Hauptstadt); Den Haag (Regierungssitz) | 52.3676 | 4.9041 |
+| Niger | Niamey | 13.5127 | 2.1128 |
+| Nigeria | Abuja | 9.0765 | 7.3986 |
+| Nordmazedonien | Skopje | 41.9981 | 21.4254 |
+| Norwegen | Oslo | 59.9139 | 10.7522 |
+| Oman | Maskat | 23.5859 | 58.4059 |
+| Österreich | Wien | 48.2082 | 16.3738 |
+| Osttimor (Timor-Leste) | Dili | -8.5569 | 125.5603 |
+| Pakistan | Islamabad | 33.6844 | 73.0479 |
+| Palau | Ngerulmud | 7.5006 | 134.6242 |
+| Palästina | Ramallah (faktischer Regierungssitz); Ost-Jerusalem (beansprucht) | 31.9038 | 35.2034 |
+| Panama | Panama-Stadt | 8.9824 | -79.5199 |
+| Papua-Neuguinea | Port Moresby | -9.4438 | 147.1803 |
+| Paraguay | Asunción | -25.2637 | -57.5759 |
+| Peru | Lima | -12.0464 | -77.0428 |
+| Philippinen | Manila | 14.5995 | 120.9842 |
+| Polen | Warschau | 52.2297 | 21.0122 |
+| Portugal | Lissabon | 38.7223 | -9.1393 |
+| Ruanda | Kigali | -1.9403 | 30.0586 |
+| Rumänien | Bukarest | 44.4268 | 26.1025 |
+| Russland | Moskau | 55.7558 | 37.6173 |
+| Salomonen | Honiara | -9.4280 | 159.9498 |
+| Sambia | Lusaka | -15.3875 | 28.3228 |
+| Samoa | Apia | -13.8506 | -171.7513 |
+| San Marino | San Marino | 43.9424 | 12.4578 |
+| São Tomé und Príncipe | São Tomé | 0.3365 | 6.7273 |
+| Saudi-Arabien | Riad | 24.7136 | 46.6753 |
+| Schweden | Stockholm | 59.3293 | 18.0686 |
+| Schweiz | Bern | 46.9480 | 7.4474 |
+| Senegal | Dakar | 14.7167 | -17.4677 |
+| Serbien | Belgrad | 44.7866 | 20.4489 |
+| Seychellen | Victoria | -4.6191 | 55.4513 |
+| Sierra Leone | Freetown | 8.4657 | -13.2317 |
+| Simbabwe | Harare | -17.8252 | 31.0335 |
+| Singapur | Singapur | 1.3521 | 103.8198 |
+| Slowakei | Bratislava | 48.1486 | 17.1077 |
+| Slowenien | Ljubljana | 46.0569 | 14.5058 |
+| Somalia | Mogadischu | 2.0469 | 45.3182 |
+| Spanien | Madrid | 40.4168 | -3.7038 |
+| Sri Lanka | Sri Jayewardenepura Kotte (offiziell); Colombo (faktisch) | 6.9022 | 79.9219 |
+| St. Kitts und Nevis | Basseterre | 17.3026 | -62.7177 |
+| St. Lucia | Castries | 14.0101 | -60.9875 |
+| St. Vincent und die Grenadinen | Kingstown | 13.1600 | -61.2248 |
+| Südafrika | Pretoria (Verwaltung); Kapstadt (Legislative); Bloemfontein (Judikative) | -25.7479 | 28.2293 |
+| Sudan | Khartum | 15.5007 | 32.5599 |
+| Südsudan | Juba | 4.8594 | 31.5713 |
+| Suriname | Paramaribo | 5.8520 | -55.2038 |
+| Syrien | Damaskus | 33.5138 | 36.2765 |
+| Tadschikistan | Duschanbe | 38.5598 | 68.7870 |
+| Taiwan | Taipeh | 25.0330 | 121.5654 |
+| Tansania | Dodoma | -6.1630 | 35.7516 |
+| Thailand | Bangkok | 13.7563 | 100.5018 |
+| Togo | Lomé | 6.1725 | 1.2314 |
+| Tonga | Nuku'alofa | -21.1393 | -175.2049 |
+| Trinidad und Tobago | Port of Spain | 10.6549 | -61.5019 |
+| Tschad | N'Djamena | 12.1348 | 15.0557 |
+| Tschechien | Prag | 50.0755 | 14.4378 |
+| Tunesien | Tunis | 36.8065 | 10.1815 |
+| Türkei | Ankara | 39.9334 | 32.8597 |
+| Turkmenistan | Aschgabat | 37.9601 | 58.3261 |
+| Tuvalu | Funafuti | -8.5211 | 179.1983 |
+| Uganda | Kampala | 0.3476 | 32.5825 |
+| Ukraine | Kiew | 50.4501 | 30.5234 |
+| Ungarn | Budapest | 47.4979 | 19.0402 |
+| Uruguay | Montevideo | -34.9011 | -56.1645 |
+| Usbekistan | Taschkent | 41.2995 | 69.2401 |
+| Vanuatu | Port Vila | -17.7333 | 168.3273 |
+| Vatikanstadt | Vatikanstadt | 41.9029 | 12.4534 |
+| Venezuela | Caracas | 10.4806 | -66.9036 |
+| Vereinigte Arabische Emirate | Abu Dhabi | 24.4539 | 54.3773 |
+| Vereinigte Staaten | Washington, D.C. | 38.9072 | -77.0369 |
+| Vereinigtes Königreich | London | 51.5074 | -0.1278 |
+| Vietnam | Hanoi | 21.0285 | 105.8542 |
+| Zentralafrikanische Republik | Bangui | 4.3947 | 18.5582 |
+| Zypern | Nikosia | 35.1856 | 33.3823 |
+
+---
+
+**Umfang:** 193 UN-Mitgliedstaaten sowie Vatikanstadt, Palästina, Kosovo und Taiwan (insgesamt 197 Einträge).
+
+**Koordinaten:** Dezimalgrad (WGS84), Breitengrad positiv = Nord, negativ = Süd; Längengrad positiv = Ost, negativ = West. Werte beziehen sich auf das Stadtzentrum der jeweiligen Hauptstadt und sind auf 4 Nachkommastellen gerundet — für hochpräzise Anwendungen sollten sie gegen eine Geodaten-Quelle validiert werden.
